@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Upload Image";
+}
+
+<div class="text-center">
+   <form asp-action="UploadImage" enctype="multipart/form-data">
+        <p>Choose image</p>
+        <input type="file" name="file" />
+        <br />
+        <input type="submit" />   
+        <img src="/file.jpg" width="200" />
+        <button type="button" onclick="alert('Blur')"> Blur</button>
+    </form>"
+</div>
